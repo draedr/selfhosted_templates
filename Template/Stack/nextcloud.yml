@@ -8,8 +8,6 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
       - TZ=${TZ}
-    volumes:
-      - /portainer/Files/AppData/Config/Nextcloud/Config:/config
     ports:
       - ${PORT}:443
     restart: unless-stopped
